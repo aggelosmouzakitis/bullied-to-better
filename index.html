@@ -83,8 +83,20 @@
         <img src="logo.png" alt="Bullied To Better Logo" width="150">
     </header>
 
-    <h1>🚀 <span class="blink">Welcome to 404 Teams</span></h1>
-    <hr>
+    <div style="font-family: 'Courier New', monospace; color: #00FF00; background: #000; padding: 20px;">
+        <p>root@team:~$ <span id="command"></span><span class="blink">█</span></p>
+    </div>
+    <script>
+        let commands = ["fix alignment", "debug silos", "reboot growth"];
+        let index = 0;
+        function typeCommand() {
+            let cmd = commands[index];
+            document.getElementById("command").innerText = cmd;
+            index = (index + 1) % commands.length;
+        }
+        setInterval(typeCommand, 1000);
+    </script>
+
     <div class="container">
         <h1>Your Growth Team Isn't Broken—It's Just Stuck.</h1>
         <p>And no, another feel-good workshop or fancy tool won’t fix it.</p>
@@ -104,44 +116,6 @@
             <li><strong>Softball Feedback Loops:</strong> Dancing around tough conversations.</li>
             <li><strong>Tool Addiction:</strong> Thinking a new system will fix deep-rooted issues.</li>
         </ul>
-
-        <h2>The Solution: No-Excuses Fixes for Growth Teams</h2>
-        <h3>👉 Bullied to Better Crossfunctional Leaders</h3>
-        <ul>
-            <li>Defining a <strong>clear RACI matrix</strong> (no more “who owns this?”).</li>
-            <li>Setting <strong>success metrics that actually matter.</strong></li>
-            <li>Clarifying roles to eliminate overlaps and confusion.</li>
-            <li>Building <strong>accountability structures</strong> that stick.</li>
-            <li>Developing the mindset to handle tough decisions (without burning out).</li>
-        </ul>
-
-        <h3>👉 Bullied to Better Crossfunctional Teams</h3>
-        <ul>
-            <li>Facilitate the hard conversations no one wants to have.</li>
-            <li>Break down silos and align goals <strong>without the BS.</strong></li>
-            <li>Implement clear accountability processes that stop finger-pointing.</li>
-            <li>Set up a culture of <strong>ownership and execution.</strong></li>
-            <li>Build systems that ensure sustainable, measurable progress.</li>
-        </ul>
-
-        <h2>Who This Is For</h2>
-        <ul>
-            <li><strong>First-time growth managers</strong> struggling to align their team and gain respect.</li>
-            <li><strong>Startup CEOs</strong> scaling fast but buried in inefficiencies.</li>
-            <li><strong>New leaders</strong> inheriting broken systems and facing resistance.</li>
-        </ul>
-
-        <h2>Why Me?</h2>
-        <p>I’m a <strong>growth product leader at IBM</strong>, and I’ve worked with over <strong>50 tech companies, startups, scaleups, and unicorns.</strong></p>
-        <ul>
-            <li>I specialize in <strong>fixing dysfunctional growth teams,</strong> not just talking about it.</li>
-            <li>I’m also an <strong>integrative psychotherapist,</strong> which means I understand both the systems <strong>and the people</strong> behind them.</li>
-            <li>I don't do feel-good coaching. I do <strong>hard-hitting, pragmatic fixes.</strong></li>
-        </ul>
-        <hr>
-        <h2>What’s Next?</h2>
-        <p><a href="#">Download the Free Book</a> – "The BS Guide to Fixing Crossfunctional Teams"</p>
-        <p><a href="https://calendly.com/aggelosmouzakitis/one-to-one">Book a No-BS Call</a> – We’ll dive into what’s really going wrong and how to fix it—fast.</p>
         <hr>
         <p>Let’s fix your team. <a href="#">Contact me</a>.</p>
     </div>
