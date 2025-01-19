@@ -10,6 +10,8 @@
             background-color: #000;
             color: #FFFFFF;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
         a {
             color: #00FFFF;
@@ -24,11 +26,13 @@
             width: 80%;
         }
         .container {
+            max-width: 90%;
             width: 600px;
             margin: 50px auto;
             text-align: left;
             border: 2px solid #FFFFFF;
             padding: 20px;
+            box-sizing: border-box;
         }
         .blink {
             animation: blinker 1s linear infinite;
@@ -36,6 +40,39 @@
         @keyframes blinker {
             50% {
                 opacity: 0;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 30px auto;
+                padding: 15px;
+            }
+            h1, h2, h3 {
+                font-size: 1.5em;
+            }
+            ul {
+                padding-left: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            .container {
+                padding: 10px;
             }
         }
     </style>
@@ -51,7 +88,7 @@
     <div class="container">
         <h1>Your Growth Team Isn't Broken—It's Just Stuck.</h1>
         <p>And no, another feel-good workshop or fancy tool won’t fix it.</p>
-        <p>Cross-functional growth teams in scaling companies face <strong>misaligned goals, unclear accountability, knowledge silos, and slow decision-making.</strong> Sound familiar?</p>
+        <p>Crossfunctional growth teams in scaling companies face <strong>misaligned goals, unclear accountability, knowledge silos, and slow decision-making.</strong> Sound familiar?</p>
         <p>You’ve tried all the “right” things—frameworks, empathy training, and endless meetings—but real progress feels like a distant dream. The truth?</p>
         <p><strong>You’ve been fed corporate-approved fluff disguised as solutions.</strong></p>
         <hr>
@@ -69,7 +106,7 @@
         </ul>
 
         <h2>The Solution: No-Excuses Fixes for Growth Teams</h2>
-        <h3>👉 Bullied to Better Cross-functional Leaders</h3>
+        <h3>👉 Bullied to Better Crossfunctional Leaders</h3>
         <ul>
             <li>Defining a <strong>clear RACI matrix</strong> (no more “who owns this?”).</li>
             <li>Setting <strong>success metrics that actually matter.</strong></li>
@@ -78,7 +115,7 @@
             <li>Developing the mindset to handle tough decisions (without burning out).</li>
         </ul>
 
-        <h3>👉 Bullied to Better Cross-functional Teams</h3>
+        <h3>👉 Bullied to Better Crossfunctional Teams</h3>
         <ul>
             <li>Facilitate the hard conversations no one wants to have.</li>
             <li>Break down silos and align goals <strong>without the BS.</strong></li>
@@ -103,7 +140,7 @@
         </ul>
         <hr>
         <h2>What’s Next?</h2>
-        <p><a href="#">Download the Free Book</a> – "The BS Guide to Fixing Cross-functional Teams"</p>
+        <p><a href="#">Download the Free Book</a> – "The BS Guide to Fixing Crossfunctional Teams"</p>
         <p><a href="https://calendly.com/aggelosmouzakitis/one-to-one">Book a No-BS Call</a> – We’ll dive into what’s really going wrong and how to fix it—fast.</p>
         <hr>
         <p>Let’s fix your team. <a href="#">Contact me</a>.</p>
