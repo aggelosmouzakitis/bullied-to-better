@@ -1,152 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Growth Team Isn't Broken—it's Just Stuck</title>
-    <style>
-        body {
-            font-family: "Courier New", monospace;
-            background-color: #1E1E1E;
-            color: #FFFFFF;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            font-size: 20px;
-        }
-        a {
-            color: #00FFFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        hr {
-            border: none;
-            border-top: 2px dashed #FFFFFF;
-            width: 80%;
-        }
-        .container {
-            max-width: 90%;
-            width: 600px;
-            margin: 50px auto;
-            text-align: left;
-            border: 2px solid #FFFFFF;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .blink {
-            animation: blinker 1s linear infinite;
-        }
-        @keyframes blinker {
-            50% {
-                opacity: 0;
-            }
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .terminal {
-            font-size: 1.75em;
-            text-transform: none;
-            font-weight: normal;
-        }
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                margin: 30px auto;
-                padding: 15px;
-            }
-            h1, h2, h3 {
-                font-size: 1.5em;
-            }
-            ul {
-                padding-left: 20px;
-            }
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.3em;
-            }
-            h2 {
-                font-size: 1.1em;
-            }
-            h3 {
-                font-size: 1em;
-            }
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aggelos Mouzakitis — Psychotherapist and Executive Coach working with senior professionals navigating the harder, less visible challenges that come with operating at a high level.">
+  <title>Aggelos Mouzakitis</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <style>
+
+    /* ─── Reset ─────────────────────────────────────────────────────── */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ─── Base ───────────────────────────────────────────────────────── */
+
+    body {
+      background-color: #1a1a18;
+      color: #e8e4dc;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.80;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ─── Layout ─────────────────────────────────────────────────────── */
+
+    main {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 128px 24px 80px;
+    }
+
+    /* ─── Header ─────────────────────────────────────────────────────── */
+
+    header {
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 1.0;
+      color: #e8e4dc;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .name-rule {
+      border: none;
+      border-top: 1px solid #b8a98a;
+      margin-bottom: 24px;
+    }
+
+    .role {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #908b83;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      line-height: 1;
+    }
+
+    /* ─── Section dividers ───────────────────────────────────────────── */
+
+    .divider {
+      border: none;
+      border-top: 1px solid #2c2c29;
+      margin: 64px 0;
+    }
+
+    /* ─── Section labels ─────────────────────────────────────────────── */
+
+    .label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      color: #635f5a;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 28px;
+    }
+
+    /* ─── Body prose ─────────────────────────────────────────────────── */
+
+    p {
+      margin-bottom: 26px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ─── Terms list ─────────────────────────────────────────────────── */
+
+    .terms-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+    }
+
+    .terms-list li {
+      color: #e8e4dc;
+      padding-bottom: 12px;
+    }
+
+    .terms-list li:last-child {
+      padding-bottom: 0;
+    }
+
+    /* ─── Links ──────────────────────────────────────────────────────── */
+
+    a {
+      color: #e8e4dc;
+      text-decoration: none;
+      transition: color 150ms ease, text-decoration-color 150ms ease;
+    }
+
+    a:hover {
+      color: #f4f1eb;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #b8a98a;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────────────── */
+
+    footer {
+      margin-top: 64px;
+    }
+
+    .footer-rule {
+      border: none;
+      border-top: 1px solid #2c2c29;
+      margin-bottom: 32px;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: #635f5a;
+      letter-spacing: 0.04em;
+      margin-bottom: 0;
+    }
+
+    /* ─── Mobile ─────────────────────────────────────────────────────── */
+
+    @media (max-width: 640px) {
+      main {
+        padding-top: 72px;
+        padding-bottom: 64px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      body {
+        font-size: 18px;
+      }
+
+      .divider {
+        margin: 48px 0;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
+  <main>
+
     <header>
-        <img src="logo.png" alt="400 Teams Logo" width="150">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <h1>Aggelos Mouzakitis</h1>
+      <hr class="name-rule">
+      <p class="role">Psychotherapist · Executive Coach</p>
     </header>
 
-    <div class="terminal" style="font-family: 'Courier New', monospace; color: #00FF00; background: #1E1E1E; padding: 20px;">
-        <p>root@team:~$ <span id="command"></span><span class="blink">█</span></p>
-    </div>
-    <script>
-        let commands = ["fix alignment", "debug silos", "reboot growth"];
-        let index = 0;
-        function typeCommand() {
-            let cmd = commands[index];
-            document.getElementById("command").innerText = cmd;
-            index = (index + 1) % commands.length;
-        }
-        setInterval(typeCommand, 1000);
-    </script>
+    <hr class="divider">
 
-    <hr>
-    <div class="container">
-        <h1>Your Revenue Efforts Aren't Broken—They're Just Stuck</h1>
-        <p>Endless meetings, workshops and empty buzzwords. Your revenue efforts aren't doomed; they're just stuck by misaligned priorities and slow decision-making.</p>
-        
-        <h2>The promise</h2>
-        <p>I boost your revenue program's ROI by <strong>30% in 90 days</strong> by getting marketing, sales, and product working as one unified force—powered by streamlined processes and practical AI tools.</p>
-      
+    <section id="getting-started">
+      <span class="label">Getting Started</span>
+      <p>We meet for a 60-minute introductory session, free of charge. This is a real working session, not a sales call. You'll leave with something useful regardless of whether we decide to work together.</p>
+      <p>If I'm not the right fit, I'll tell you directly and point you toward someone who is.</p>
+    </section>
 
-        <h2>The "Monsters" You're Facing</h2>
-        <ul>
-            <li><strong>Unclear responsibilities:</strong> Too much talk, not enough accountability.</li>
-            <li><strong>Misaligned goals:</strong> Teams's metrics that are not looking in the same direction, creating competition and conflicts.</li>
-            <li><strong>Siloed operations:</strong> Teams working in isolation, duplicating effort and wasting money.</li>
-            <li><strong>Process gaps:</strong> Critical handoffs falling through cracks between departments.</li>
-        </ul>
+    <hr class="divider">
 
-        <h2>How My Process Works</h2>
-        <p>I believe in a straightforward, three-step method:</p>
-        <ul>
-            <li><strong>Diagnose:</strong> I audit your revenue operation and calculate how much money you're losing through inefficiencies and broken processes.</li>
-            <li><strong>Plan:</strong> You get a precise action plan with clear owners, metrics, and deadlines—no fluff, just fixes.</li>
-            <li><strong>Execute:</strong> I drive implementation—either advising you or leading your team directly. Your choice, your results.</li>
-            
-        <h2>My Approach</h2>
-      
-             <p>❌ Endless meetings</p>
-             <p>❌ Recycled frameworks that deliver vague ideas and little progress.</p>
-             <p>❌ Feel-good advice found in blogs and gurus on Linkedin.</p>
-       
-       
-             <p>✅ Actionable fixes that get to the heart of the problems.</p>
-             <p>✅ No sugar-coating—you might not like my direct approach at first, but you'll love the results. I deliver hard truths and harder fixes that actually work.</p>
-       
+    <section id="bio">
+      <span class="label">Bio</span>
+      <p>I'm a licensed psychotherapist, an executive coach and a tech Product Growth leader. I've spent 18 years in the industry as a founder, consultant, and corporate strategist working with 50+ startups and training 500+ people. I now work with senior professionals navigating the harder, less visible challenges that come with operating at a high level.</p>
+      <p>I'm not a coach who learned about tech by reading about it. I've lived it.</p>
+    </section>
 
-        <h2>Why Choose Me</h2>
-        <p>I've built and led growth teams at one of the largest tech companies in the world and have worked with over 50 startups, scaleups, and unicorns. I don't offer feel-good coaching—I deliver honest, practical fixes.</p>
-        <p>With a background in integrative psychotherapy, I understand both the systems and the people behind them, ensuring your team not only adjusts its process but also evolves together.</p>
+    <hr class="divider">
 
-        <h2>What's Next</h2>
-<p><a href="https://calendly.com/aggelosmouzakitis/one-to-one">Schedule Your Revenue Audit:</a> Find out how much money your team's inefficiencies are costing you.</p>
-    <p><small>*This is a low-cost engagement to test our chemistry and cooperation</small></p></div>
+    <section id="who-i-work-with">
+      <span class="label">Who I Work With</span>
+      <p>I work with senior high-performers who are successful by most measures and struggling in ways they can't easily name.</p>
+      <p>Some are hitting walls they don't understand — repeating patterns, losing drive, making decisions that don't reflect who they think they are. Others are mid-transition: a new role, a company exit, a life that no longer fits. Some are dealing with the kind of anxiety and self-doubt that doesn't show up in their LinkedIn profile but follows them into every room.</p>
+      <p>What they have in common: they're not looking for cheerleading. They want someone who can actually see what's happening.</p>
+    </section>
 
-    <p>&copy; 2025 404 Teams. All rights reserved.</p>
+    <hr class="divider">
+
+    <section id="background">
+      <span class="label">Background</span>
+      <p>18 years in tech taught me that most performance problems aren't strategy problems. They're identity problems, pattern problems, internal architecture problems. The org chart, the roadmap, the metrics — those are rarely where the real issue lives.</p>
+      <p>I trained as a psychotherapist because I kept hitting the ceiling of what strategic advice could do. Understanding the motives and causes underneath decisions changes everything. It's slower at first, and more durable afterward.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="how-i-work">
+      <span class="label">How I Work</span>
+      <p>I don't separate therapy from coaching artificially. What I offer depends on what the situation actually needs — sometimes that's therapeutic work, sometimes career or leadership coaching, sometimes a direct strategic conversation. I hold all of it.</p>
+      <p>My approach is precise, not gentle. I move toward what's difficult, not around it. I don't rush to reframes or action plans before we've understood what's actually driving the pattern. That's how lasting change works.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="terms">
+      <span class="label">Terms</span>
+      <ul class="terms-list">
+        <li>Sessions are 50 minutes.</li>
+        <li>Between sessions I'm available via message for anything time-sensitive.</li>
+        <li>Pricing and commitment length are discussed in our first session, based on what you're working on and what kind of support makes sense.</li>
+      </ul>
+      <p>If you'd like to move forward, request a call at <a href="https://aggelosmouzakitis.com">aggelosmouzakitis.com</a></p>
+    </section>
+
+    <footer>
+      <hr class="footer-rule">
+      <p>&copy; 2025 Aggelos Mouzakitis</p>
+    </footer>
+
+  </main>
 
 </body>
 </html>
